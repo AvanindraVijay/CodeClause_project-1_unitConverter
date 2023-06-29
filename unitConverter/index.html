@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Unit and Currency Converter</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1>Unit and Currency Converter</h1>
+  <div class="container">
+    <div class="form-group">
+      <label>Value:</label>
+      <input type="number" id="inputValue">
+    </div>
+    <div class="form-group">
+      <label>From:</label>
+      <select id="selectFrom">
+        <option value="cm">Centimeters</option>
+        <option value="inch">Inches</option>
+        <option value="m">Meters</option>
+        <option value="km">Kilometers</option>
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+        <option value="usd">USD</option>
+        <option value="eur">EUR</option>
+        <option value="gbp">GBP</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>To:</label>
+      <select id="selectTo">
+        <option value="cm">Centimeters</option>
+        <option value="inch">Inches</option>
+        <option value="m">Meters</option>
+        <option value="km">Kilometers</option>
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+        <option value="usd">USD</option>
+        <option value="eur">EUR</option>
+        <option value="gbp">GBP</option>
+      </select>
+    </div>
+    <button onclick="convertUnits()">Convert</button>
+    <div class="result" id="result"></div>
+    <h2>Conversion History</h2>
+    <ul id="historyList"></ul>
+    <button onclick="clearHistory()">Clear History</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
